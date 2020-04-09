@@ -22,10 +22,19 @@
 <ion-content>
   <ion-list id="ingredients" lines="full">
       <ion-item>
+          <!-- The image on the left of the item. -->
           <ion-thumbnail slot="start">
               <img src="/assets/shapes.svg" alt="">
-              <ion-label>Ingredient</ion-label>
           </ion-thumbnail>
+          
+          <!-- The item label. -->
+          <ion-label>Ingredient</ion-label>
+
+          <!-- The measurement on the right. -->
+          <ion-label slot="end" class="ion-text-right">
+              <h6>Amount</h6>
+              <ion-text>200g</ion-text>
+          </ion-label>
       </ion-item>
   </ion-list>
 </ion-content>
